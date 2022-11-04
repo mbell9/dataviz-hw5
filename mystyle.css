@@ -1,0 +1,39 @@
+    body {
+        style="font-family: 'Times New Roman', Times, serif;"
+    }
+    
+    div.top{
+        margin: auto;
+        padding: 32px;
+        position: relative; 
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 200%;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .column{
+        padding: 10px;
+    }
+    
+    div.left{
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px; 
+        border-right: 1px solid black;
+    }
+
+    div.right{
+        position: relative;
+    }
+
+    svg {
+        position:  absolute;
+    }
