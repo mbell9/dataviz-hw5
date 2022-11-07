@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="mystyle.css">
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="plotting.js"></script>
-    <script src="https://abureyanahmed.github.io/data_visualization/slides/crossings.js"></script>
+    <script src="crossings.js"></script>
 </head>
 <body style="font-family: 'Times New Roman', Times, serif;">
 
@@ -25,19 +25,14 @@ vertex1, vertex2
 2   9
 7   8
     </textarea>
-    <br>
-    <label>Scatter plot</label>
-    <input type="checkbox" id="scatter"><br>
-    <label>Bar chart</label>
-    <input type="checkbox" id="bar"><br>
+    <br><br>
     <input type="button" onclick="drawLines(parseData())" value="Draw">
-    <input type="button" onclick="findIntersection()" value="Find Intersection">
+    <input type="button" onclick="printIntersections()" value="Find Intersections">
     <br><br>
 
     <label for="output">Output:</label><br>
     <textarea id="output" name="output" rows="15" cols="45"></textarea>  
-
-    <script>document.getElementById("scatter").checked = true</script>
+    <script>window.onload = output.value = "";</script> <!-- clear output box on page refresh -->
 
     </div>
 
